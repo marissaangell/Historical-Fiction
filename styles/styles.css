@@ -1,0 +1,122 @@
+/* Base Elements */
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+	color: white;
+}
+
+.row {
+	text-align: center;
+}
+
+.col {
+	flex-grow: 1;
+	flex-shrink: 1;
+	transition: all 400ms ease;
+}
+
+iframe {
+	width: 100%;
+	height: 315px;
+}
+
+.content {
+	text-align: center;
+}
+
+
+/* Cascading Elements */
+.title-section img {
+	width: 40%;
+}
+
+.content .row {
+	margin: 30px;
+}
+
+.col img {
+	width: 100%;
+	border: 2px solid black;
+}
+
+.content {
+	border: 2px solid black;
+}
+
+
+/* Timeline Sections */
+.title-section {
+	margin-bottom: 25px;
+}
+
+.section1, .section2, .section3, .section4, .you-are-here, .section-end, .section-bib {
+	margin-bottom: 25px;
+}
+
+.section2-col .row {
+	padding: 8% 8% 0 8%;
+}
+
+
+/* Background Colors */
+.title-section {
+	background-color: black;
+	padding: 10px 0px 10px 0px;
+}
+
+.section1 .content {
+	background-color: #800000;
+}
+
+#col2-1 {
+	background-color: #ff8c00;
+}
+#col2-2 {
+	background-color: #ffd700;
+}
+
+#col3-1, #col3-1b {
+	background-color: #008000;
+}
+
+#crimsongaming {
+	background-color: black;
+}
+
+#col3-2, #col3-2b{
+	background-color: #000080;
+}
+#col3-3, #col3-3b {
+	background-color: #4b0082;
+}
+
+.you-are-here .content {
+	background-color: black;
+}
+
+#end {
+	background-color: #800000
+}
+
+
+
+.bibliography {
+	background-color: white;
+	text-align: left;
+	width: 50%;
+}
+
+.bibliography h1 {
+	text-align: center;
+}
+
+.back {
+	text-align: left;
+}
