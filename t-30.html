@@ -10,36 +10,122 @@
 	<body>
 
 		<div class="container-fluid page">
-			<div class="subtitle"></div>
+			<div class="subtitle">T-30</div>
 
 			<div class="row">
 				<div class="col-1"></div>
 				<div class="col-10 content">
 					<div class="text">
-						<p></p>
+						<div class="video-container">
+							<video controls autoplay>
+							  <source src="images/reactor-pulse.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+
+						<span><p>“Once all the preparations were in place, it was all too easy to get the humans to behave as planned. The night crew was woefully unprepared when the reactor power took a nosedive with my interference. They panicked and re-inserted all of the control rods at once, causing a meltdown and completing my plan.</p>
+
+						<p>In the explosion, I was buried under the reactor and went into emergency power-conservation mode. After all these years, you’ve been the only individual kind enough to free me.”
+						</p></span>
 					</div>
 			
 					<div class="container-fluid dialogue-container">
-						<div class="row dialogue" id="t45-main">
+						<div class="row dialogue" id="t-main">
 							<div class="container-fluid">
-								<div class="row" id="t45-b1">
-									<button class="btn btn-dark"></button>
+								<div class="row" id="t-b1">
+									<button class="btn btn-dark">Power dropping?</button>
+								</div>
+
+								<div class="row" id="t-b2">
+									<button class="btn btn-dark">What are control rods?</button>
 								</div>
 
 								<div class="row">
-									<a href="t-40.html"><button class="btn btn-danger"></button></a>
+									<a href="t-25.html"><button class="btn btn-danger">Even if that test led to a meltdown, how would that lead to the destruction of the human race?</button></a>
 								</div>
 
 							</div>
 						</div>
 
-						<div class="row dialogue hidden" id="t45-1">
+						<!-- Level 2 -->
+						<div class="row dialogue hidden" id="t-1">
 							<div class="container-fluid">
 								<div class="row">
-									<span></span>
+									<span>"Yes, I dropped the reactor’s power to below the minimum output. This caused Xenon poisoning, which prevented further output."</span>
+								</div>
+
+								<div class="row" id="t-1-b1">
+									<button class="btn btn-dark">Minimum power?</button>
+								</div>
+
+								<div class="row" id="t-1-b2">
+									<button class="btn btn-dark">Xenon poisoning?</button>
+								</div>
+
+								<div class="row">
+									<button class="btn btn-dark" id="t-1-back">Back</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="row dialogue hidden" id="t-2">
+							<div class="container-fluid">
+								<div class="row">
+									<span>"Control rods are boron cylinders that slow nuclear reactions. Their purpose is to decrease power output, which they do by simply coming into contact with the core."</span>
+								</div>
+
+								<div class="row" id="t-2-b1">
+									<button class="btn btn-dark">Why would re-insertion of the control rods cause a meltdown?</button>
+								</div>
+
+								<div class="row">
+									<button class="btn btn-dark" id="t-2-back">Back</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- Level 3 -->
+						<div class="row dialogue hidden" id="t-1-1">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="image-container" style="background-color: white">
+										<img src="images/chernobyl-power-chronology.gif">
+									</div>
+
+									<span><p>"The reactor was designed to run at 3200 MW and had a minimum power of 700 MW. Dropping the power to 50 MW was enough to send the untrained officers on duty into a panic, making them behave exactly according to plan."</p></span>
 								</div>
 								<div class="row">
-									<button class="btn btn-dark" id="t45-1-back">Back</button>
+									<button class="btn btn-dark" id="t-1-1-back">Back</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="row dialogue hidden" id="t-1-2">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="image-container">
+										<img src="images/xenon-poisoning.png">
+									</div>
+
+									<span><p>"When the reactor operates below the minimum power output, there is not enough heat to burn off the byproduct of the nuclear reaction, Xenon. This causes the byproduct to, in essence, suffocate the reactor, preventing more reactions from taking place. This causes a feedback loop of low power output, which was perfect for my plan."</p></span>
+								</div>
+								<div class="row">
+									<button class="btn btn-dark" id="t-1-2-back">Back</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="row dialogue hidden" id="t-2-1">
+							<div class="container-fluid">
+								<div class="row">
+									<span><p>“The control rods, while themselves being made of boron, were tipped with graphite. Boron decreases nuclear reactions and graphite does not react.</p>
+
+									<p>In effect, this means that while in the core, the graphite does nothing, but while being inserted into the core, it displaces particles within, causing more reactions for a short period before the boron is lowered far enough to counteract these effects.</p>
+
+									<p>If the operators had simply inserted control rods one at a time, they could have prevented the meltdown. Instead, they inserted all of them at once in their panic, and the graphite tips of the control rods caused a massive power spike, which led to the core exploding.”</p></span>
+								</div>
+								<div class="row">
+									<button class="btn btn-dark" id="t-2-1-back">Back</button>
 								</div>
 							</div>
 						</div>
