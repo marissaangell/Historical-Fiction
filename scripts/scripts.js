@@ -76,3 +76,13 @@ $("#t-1-2-back").click(function(){
   $("#t-1-2").hide(); 
   $("#t-1").show(); 
 })
+
+$("#t-2-b1").click(function(){ 
+  $("#t-2").hide(); 
+  $("#t-2-1").show(); 
+})
+
+$("#t-2-1-back").click(function(){ 
+  $("#t-2-1").hide(); 
+  $("#t-2").show(); 
+})
