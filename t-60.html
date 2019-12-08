@@ -3,6 +3,7 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+		<link rel="stylesheet" type="text/css" href="styles/slideshow.css">
 
 		<title>Historical Fiction</title>
 	</head>
@@ -10,42 +11,76 @@
 	<body>
 
 		<div class="container-fluid page">
-			<div class="row text">
-				<p>Your name is Alex, and since you were a little kid you always wanted to go on a real adventure. Now, with the radiation levels in Chernobyl finally allowing for almost an hour of uninterrupted exploration, your dream is coming true.</p>
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-10 content">
+					<div class="text">
+						<p>Your name is Alex, and since you were a little kid you always wanted to go on a real adventure. Now, with the radiation levels in Chernobyl finally allowing for almost an hour of uninterrupted exploration, your dream is coming true.</p>
 
-				<p>You’ve spent what feels like your whole life researching the Chernobyl accident. The history, the political intrigue, and most importantly, what went wrong during the incident itself. You wanted to make sure you were as prepared as possible for your one big moment.</p>
+						<p>You’ve spent what feels like your whole life researching the Chernobyl accident. The history, the political intrigue, and most importantly, what went wrong during the incident itself. You wanted to make sure you were as prepared as possible for your one big moment.</p>
 
-				https://www.youtube.com/watch?v=f5ptI6Pi3GA
+						<div class="video-container">
+							<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/f5ptI6Pi3GA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
 
-				<p>You’ve just spent your life’s savings to travel to Russia. Getting to Pripyat was easy, but they don’t let people into Chernobyl unless they’re on a guided tour. Luckily, since the radiation levels have steadily dropped, security has gotten laxer around the Chernobyl site, allowing you to sneak past the few guards they still station to frighten off curious tourists.</p>
+						<p>You’ve just spent your life’s savings to travel to Russia. Getting to Pripyat was easy, but they don’t let people into Chernobyl unless they’re on a guided tour. Luckily, since the radiation levels have steadily dropped, security has gotten laxer around the Chernobyl site, allowing you to sneak past the few guards they still station to frighten off curious tourists.</p>
 
-				<p>You’re no tourist, though. You’re on a mission: get to the Elephant’s Foot and be the first person in the world to see what’s inside of it.</p>
+						<p>You’re no tourist, though. You’re on a mission: get to the Elephant’s Foot and be the first person in the world to see what’s inside of it.</p>
 
-				<p>Beyond the guards, a normal-looking landscape stretches before you. The beauty is slightly poisoned by the presence of several scary-looking signs signalling the presence of radiation. You take a deep breath, pause, and then start walking.</p>
+						<p>Beyond the guards, a normal-looking landscape stretches before you. The beauty is slightly poisoned by the presence of several scary-looking signs signalling the presence of radiation. You take a deep breath, pause, and then start walking.</p>
 
-				[SLIDESHOW OF CHERNOBYL LANDSCAPE IMAGES]
+						<!-- Slideshow container -->
+						<div class="slideshow-container">
 
-				<p>After a half-hours walk, you’ve finally arrived at the remains of reactor 4. When it was first built, one of the plant’s iconic white-and-red-striped chimneys towered over the reactor. </p>
+						  <!-- Full-width images with number and caption text -->
+						  <div class="mySlides">
+						    <img src="images/rbmk_after.png" style="width:100%">
+						  </div>
 
-				<hr>
+						  <div class="mySlides">
+						    <img src="images/rbmk_before.png" style="width:100%">
+						  </div>
 
-				<p>Now, since the New Safe Confinement project was completed in 2017, a massive steel arch encloses the radioactive ruins.</p>
+						  <!-- Next and previous buttons -->
+						  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+						</div>
 
-			</div>
+						<p>After a half-hours walk, you’ve finally arrived at the remains of reactor 4. When it was first built, one of the plant’s iconic white-and-red-striped chimneys towered over the reactor. </p>
 
-			<div class="row container dialogue-container">
-				<div class="row dialogue" id="t60-1">
-					<p>It’s time to start your adventure. What do you do?</p>
+						<p>Now, since the New Safe Confinement project was completed in 2017, a massive steel arch encloses the radioactive ruins.</p>
 
-					<button>(Enter Chernobyl)</button>
-					<button>(Leave)</button>
+					</div>
+
+					<div class="container-fluid dialogue-container">
+						<div class="row dialogue" id="t60-1">
+							<div class="container-fluid">
+								<div class="row">It’s time to start your adventure. What do you do?</div>
+
+								<div class="row" id="t60-1-b2">
+									<button class="btn btn-dark">Leave</button>
+								</div>
+
+								<div class="row">
+									<button class="btn btn-danger">
+										<a href="t-55.html">Enter Chernobyl</a>
+									</button>
+								</div>
+								
+							</div>
+						</div>
+
+						<div class="row dialogue hidden" id="t60-2">
+							<p> > LEAVE </p>
+
+							<p>Would it be best to just turn around and head home? No, surely not - this is a once in a lifetime opportunity to accomplish your childhood dreams. You can’t say no to that. What do you do?</p>
+
+							<button class="btn btn-danger"><a href="t-55.html">Enter Chernobyl</a>
+						</div>
+					</div>
+
 				</div>
-
-				<div class="row dialogue hidden" id="t60-2">
-					<p>Would it be best to just turn around and head home? No, surely not - this is a once in a lifetime opportunity to accomplish your childhood dreams. You can’t say no to that. What do you do?</p>
-
-					<button>(Enter Chernobyl)</button>
-				</div>
+				<div class="col-1"></div>
 			</div>
 	  	</div>
 
@@ -53,5 +88,6 @@
 		<script src="scripts/jquery.min.js"></script>
 		<script src="scripts/bootstrap.bundle.min.js"></script>
 		<script src="scripts/scripts.js"></script>
+		<script src="scripts/slideshow.js"></script>
 	</body>
 </html>

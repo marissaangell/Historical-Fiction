@@ -1,4 +1,6 @@
-/* Base Elements */
+/* 
+	Base Elements 
+*/
 body, html {
 	margin: 0;
 	padding: 0;
@@ -9,6 +11,24 @@ body {
 	color: white;
 }
 
+a {
+	color: white;
+}
+
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+span {
+	color: red;
+	font-family: "Courier New", Courier, monospace;
+}
+
+
+/*
+	Base Classes
+*/
 .hidden {
 	display: none;
 }
@@ -19,19 +39,49 @@ body {
 }
 
 .subtitle {
-	font-size: 65px;
+	font-size: 60px;
 	text-align: center;
 }
 
+.content {
+	margin-top: 50px;
+	padding: 20px;
+	border: 3px solid white;
+}
+
+
 /*
-From Visual Narrative
+	Containers
 */
 .button-container {
 	margin-top: 20vh;
 	text-align: center;
 }
 
-.button {
+.credits-container {
+	color: white;
+	font-size: 18px;
+}
+
+.dialogue-container {
+	padding: 30px 50px 30px 50px;
+	border: 3px dashed white;
+}
+
+.video-container, .image-container {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+
+/*
+	Buttons
+*/
+button {
+	margin: 15px;
+}
+
+.menu-button {
 	color: white;
 	font-size: 50px;
 	text-align: center;
@@ -52,15 +102,4 @@ From Visual Narrative
 	font-size: 72px;
 	border: none;
 	width: 8vw;
-}
-
-.credits-container {
-	display: block;
-	color: white;
-	font-size: 18px;
-
-	position: fixed;
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
 }

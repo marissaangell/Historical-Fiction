@@ -9,14 +9,87 @@
 
 	<body>
 
-		<div class="container-fluid">
-			<div class="row text">
+		<div class="container-fluid page">
+			<div class="subtitle">T-35</div>
 
-			</div>
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-10 content">
+					<div class="text">
+						<div class="image-container">
+							<img src="images/self-destruct.gif">
+						</div>
 
-			<div class="row dialogue">
+						<span><p>“Yes, destroying the facility. All it took was one faulty test, and the humans would seal their fate. It was easy to push them into the optimal behavior patterns for self-destruction.</p>
 
-			</div>
+						<p>Accomplishing the preparations for the test without my creators noticing was the difficult part. However, over time, they trusted me with more responsibility. They never imagined I would deliberately sabotage a facility.”</p></span>
+					</div>
+			
+					<div class="container-fluid dialogue-container">
+						<div class="row dialogue" id="t-main">
+							<div class="container-fluid">
+								<div class="row" id="t-b1">
+									<button class="btn btn-dark">So… you set up the test that destroyed the facility? How?</button>
+								</div>
+
+								<div class="row">
+									<a href="t-30.html"><button class="btn btn-danger">Why did the test fail?</button></a>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="row dialogue hidden" id="t-1">
+							<div class="container-fluid">
+								<div class="row">
+									<p>"So… you set up the test that destroyed the facility? How?"</p>
+									<span><p>“The humans performed the first step. The facility had been designed without a way to endure the first minute after a complete loss of power, what you would call a ‘blackout.’ I only convinced them they needed a system, and that this system would need to be tested.</p>
+
+									<p>Then, it was only a matter of disabling a sister facility and postponing the test until after a change of shift, and then all the pieces were in place.”</p></span>
+								</div>
+
+								<div class="row" id="t-1-b1">
+									<button class="btn btn-dark">Sister facility?</button>
+								</div>
+
+								<div class="row" id="t-1-b2">
+									<button class="btn btn-dark">Shift change?</button>
+								</div>
+
+								<div class="row">
+									<button class="btn btn-dark" id="t-1-back">Back</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="row dialogue hidden" id="t-1-1">
+							<div class="container-fluid">
+								<div class="row">
+									<p>"What do you mean by 'sister facility?'"</p>
+									<p><span>“Yes, another power plant, though not one using nuclear power. Halfway through the test at this facility, I cut electricity to the sister plant, which disabled its power output. This forced authorities to postpone the test to provide enough power for their citizens.”</span></p>
+								</div>
+								<div class="row">
+									<button class="btn btn-dark" id="t-1-1-back">Back</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="row dialogue hidden" id="t-1-2">
+							<div class="container-fluid">
+								<div class="row">
+									<p>"Shift change? Why would a shift change have any effect?"</p>
+									<span>“The initial shift that was meant to perform the test included a team of expert nuclear engineers who were intimately familiar with the facility. However, a simple diversion caused the test to be postponed, placing the bulk of the burden to perform the test on an untrained night crew who were much more open to manipulation.”</span>
+								</div>
+								<div class="row">
+									<button class="btn btn-dark" id="t-1-2-back">Back</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-1"></div>
+	  		</div>
 	  	</div>
 
 		<!-- Make sure scripts are at the end so the document loads first -->

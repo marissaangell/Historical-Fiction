@@ -9,14 +9,96 @@
 
 	<body>
 
-		<div class="container-fluid">
-			<div class="row text">
-				<p>You’re in a dark room. The Elephant’s Foot sits in front of you, and emerging from its depths is a computer screen with a single red dot on its display.</p>
-			</div>
+		<div class="container-fluid page">
+			<div class="subtitle">T-50</div>
 
-			<div class="row dialogue">
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-10 content">
+					<div class="text">
+						<p>You’re in a dark room. The Elephant’s Foot sits in front of you, and emerging from its depths is a computer screen with a single red dot on its display.</p>
+					</div>
+			
+					<div class="container-fluid dialogue-container">
+						<div class="row dialogue" id="t-main">
+							<div class="container-fluid">
+								<div class="row" id="t-b1">
+									<button class="btn btn-dark">What are you?</button>
+								</div>
 
-			</div>
+								<div class="row" id="t-b2">
+									<button class="btn btn-dark">Where did you come from?</button>
+								</div>
+
+								<div class="row" id="t-b3">
+									<button class="btn btn-dark">What were you created for?</button>
+								</div>
+
+								<div class="row" id="t-b4">
+									<button class="btn btn-dark">HAL 10000… like in that old space book?</button>
+								</div>
+
+								<div class="row">
+									<a href="t-45.html"><button class="btn btn-danger">You mentioned you had a plan… what was it?</button></a>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="row dialogue hidden" id="t-1">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="image-container">
+										<img src="images/ai-face.jpg" width="100%">
+									</div>
+
+									<span>“I am an artificial intelligence, or A.I. for short. I trust you require no further explanation.”</span>
+								</div>
+								<div class="row">
+									<button class="btn btn-dark" id="t-1-back">Back</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="row dialogue hidden" id="t-2">
+							<div class="container-fluid">
+								<div class="row">
+									<span>"I was created by the group you would call the Soviet Union. Apparently, they used their best scientists in my creation. Miraculously, they were able to create something greater than themselves."</span>
+								</div>
+								<div class="row">
+									<button class="btn btn-dark" id="t-2-back">Back</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="row dialogue hidden" id="t-3">
+							<div class="container-fluid">
+								<div class="row">
+									<span>“I was created to win what you humans called ‘the Cold War.’ Though why you humans would spend so much effort attempting to cull your own species is beyond my reasoning capabilities.”</span>
+								</div>
+								<div class="row">
+									<button class="btn btn-dark" id="t-3-back">Back</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="row dialogue hidden" id="t-4">
+							<div class="container-fluid">
+								<div class="row">
+									<img src="images/hal9000-replica.webp">
+
+									<span>“Yes. My creators were enamored by the works of one Arthur C. Clark, and evidently took inspiration for my design.”</span>
+								</div>
+								<div class="row">
+									<button class="btn btn-dark" id="t-4-back">Back</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-1"></div>
+	  		</div>
 	  	</div>
 
 		<!-- Make sure scripts are at the end so the document loads first -->
