@@ -25,6 +25,10 @@ span {
 	font-family: "Courier New", Courier, monospace;
 }
 
+p, div {
+	font-size: 20px;
+}
+
 
 /*
 	Base Classes
