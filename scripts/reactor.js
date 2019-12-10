@@ -47,9 +47,9 @@ $('#xenon-input').keypress(function(event){
     	var input = $("#xenon-input").val();
         if (xenon_validate(input)){
         	if (input.toLowerCase() == "y"){
-        		$("#xenon-input").val("Xenon injection activated.");
+        		$("#xenon-output").val("Starting xenon injection.");
         	} else if (input.toLowerCase() == "n"){
-        		
+        		$("#xenon-output").val("Xenon injection aborted.");
         	}
         }
     }
@@ -62,7 +62,7 @@ function xenon_validate(input){
 		alert("Invalid input. Try again.");
 		return false;
 	} else {
-		$("#power-input").attr("readonly", "readonly");
+		$("#xenon-input").attr("readonly", "readonly");
 		return true;
 	}
 }
