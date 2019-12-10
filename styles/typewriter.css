@@ -10,6 +10,7 @@
     typing 1.8s steps(25, end),
     blink-caret .75s step-end 3;
   animation-fill-mode: forwards;
+  font-size: 40px;
 }
 
 .typewriter-before {
@@ -38,10 +39,25 @@
 }
 
 input {
-  /*display: inline-block;*/
   background-color: black;
   color: white;
   font-family: monospace;
   margin: 0 auto auto auto;
-  /*border: none;*/
+  border: 2px solid white;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 30px;
+  margin: 10px auto 10px auto;
+}
+
+#power-output {
+  border: none;
+  border-bottom: .10em solid white;
+  font-size: 40px;
+  width: 100px;
+}
+
+#xenon-output {
+  border: none;
+  font-size: 40px;
 }

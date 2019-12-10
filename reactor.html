@@ -10,33 +10,84 @@
 
 	<body>
 
-		<div class="minigame-container">
-			<div class="typewriter-container">
-				<div class="typewriter" id="typewriter-1">
-					<h1>Login Credentials Accepted. Use ENTER to advance.</h1>
+		<div class="minigame-container container-fluid">
+			<div class="row">
+				<div class="typewriter-container">
+					<div class="typewriter" id="typewriter-1">
+						<h1>Login Credentials Accepted. Use ENTER to advance.</h1>
+					</div>
 				</div>
 			</div>
 
-		  	<div class="typewriter-container">
-			  	<div class="typewriter-before" id="typewriter-2">
-					<h1>Reactor test currently in progress.</h1>
+			<div class="row">
+		  		<div class="typewriter-container">
+				  	<div class="typewriter-before" id="typewriter-2">
+						<h1>Reactor test currently in progress.</h1>
+					</div>
 				</div>
 			</div>
 
-			<div class="typewriter-container">
-				<div class="typewriter-before" id="typewriter-3">
-					<h1>Please specify target power output:</h1>
+			<div class="row">
+				<div class="typewriter-container">
+					<div class="typewriter-before" id="typewriter-3">
+						<h1>Please specify target power output:</h1>
+					</div>
 				</div>
 			</div>
 
-			
+			<div class="row">
 				<div class="typewriter-before" id="typewriter-4">
-					<input type="text" name="power">
+					<input type="text" name="power" id="power-input">
 				</div>
-			
+			</div>
+
+			<div class="row">
+				<div class="typewriter-container">
+					<div class="typewriter-before" id="typewriter-5">
+						<h1>Target output of <input id="power-output" readonly="readonly" value="0">MW set.</h1>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="typewriter-container">
+					<div class="typewriter-before" id="typewriter-6">
+						<h1>WARNING: Unexpected power drain detected.</h1>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="typewriter-container">
+					<div class="typewriter-before" id="typewriter-7">
+						<h1>Reactor Poisoning imminent.</h1>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="typewriter-container">
+					<div class="typewriter-before" id="typewriter-8">
+						<h1>Inject Xenon into reactor? (Y/N):</h1>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="typewriter-before" id="typewriter-9">
+					<input type="text" name="xenon" id="xenon-input">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="typewriter-container">
+					<div class="typewriter-before" id="typewriter-10">
+						<h1><input id="xenon-output" readonly="readonly" value="ERROR: User System Bypass."></h1>
+					</div>
+				</div>
+			</div>
 
 			
-
 		</div>
 
 		<!-- Make sure scripts are at the end so the document loads first -->
