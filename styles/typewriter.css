@@ -8,7 +8,7 @@
   display: inline-block;
   animation: 
     typing 1.8s steps(25, end),
-    blink-caret .75s step-end 5;
+    blink-caret .75s step-end 3;
   animation-fill-mode: forwards;
 }
 
@@ -35,4 +35,13 @@
 
 .minigame-container {
   margin: 50px;
+}
+
+input {
+  /*display: inline-block;*/
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  margin: 0 auto auto auto;
+  /*border: none;*/
 }
